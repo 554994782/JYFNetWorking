@@ -1,0 +1,73 @@
+#####
+# OS X temporary files that should never be committed
+#
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+
+.DS_Store
+
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+
+.Trashes
+
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+
+*.swp
+
+# Backup files
+*~.nib
+\#*#
+.#*
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+project.xcworkspace/
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+########## Obj-C/Swift specific ##########
+*.hmap
+*.ipa
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+
+########## React Native ##########
+# node.js
+#
+node_modules/
+npm-debug.log
+
+# BUCK
+buck-out/
+\.buckd/
+android/app/libs
+*.keystore
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+

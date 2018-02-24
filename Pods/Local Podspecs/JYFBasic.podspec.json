@@ -1,0 +1,26 @@
+{
+  "name": "JYFBasic",
+  "version": "0.0.1",
+  "summary": "Have no summary JYFBasic.",
+  "description": "A Main Foundation Component for Other Kit",
+  "homepage": "https://github.com/554994782/JYFBasic.git",
+  "license": "MIT",
+  "authors": {
+    "jiangyunfeng": "554994782@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/554994782/JYFBasic.git",
+    "branch": "develop"
+  },
+  "source_files": "JYFBasic/*.{h,swift,c,m}",
+  "public_header_files": "JYFBasic/JYFBasic.h",
+  "subspecs": [
+    {
+      "name": "SwiftyBeaver",
+      "source_files": "JYFBasic/SwiftyBeaver/*.swift"
+    }
+  ]
+}
