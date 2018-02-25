@@ -6,7 +6,7 @@ post_install do |installer|
     end
     end
 
-platform :ios, '8.0'
+platform :ios, '8.0'$(PROJECT_DIR)/JYFNetworking/Tool
 inhibit_all_warnings!
 
 source 'https://github.com/Cocoapods/Specs.git'
@@ -18,9 +18,8 @@ target 'JYFNetworkingDemo' do
     pod 'JYFBasic', :git => 'https://github.com/554994782/JYFBasic.git', :branch => ‘develop’
     pod 'Gloss'
     pod 'Moya/RxSwift'
-    pod 'RealmSwift'
+    pod 'RealmSwift', '3.1.0'
     pod 'CryptoSwift'
-    pod 'AMapLocation-NO-IDFA'
 end
 
 target 'JYFNetworking' do
@@ -28,8 +27,7 @@ target 'JYFNetworking' do
     pod 'JYFBasic', :git => 'https://github.com/554994782/JYFBasic.git', :branch => ‘develop’
     pod 'Gloss'
     pod 'Moya/RxSwift'
-    pod 'RealmSwift' '~> 3.1.0'
+    pod 'RealmSwift', '3.1.0'
     pod 'CryptoSwift'
-    pod 'AMapLocation-NO-IDFA'
 end
 

@@ -1,0 +1,6 @@
+framework module JYFBasic {
+  umbrella header "JYFBasic-umbrella.h"
+
+  export *
+  module * { export * }
+}

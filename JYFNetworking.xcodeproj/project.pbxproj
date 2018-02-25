@@ -15,6 +15,10 @@
 		0112712F20416878002E7531 /* JYFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0112712D20416878002E7531 /* JYFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0112713220416878002E7531 /* JYFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0112712B20416878002E7531 /* JYFNetworking.framework */; };
 		0112713320416878002E7531 /* JYFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0112712B20416878002E7531 /* JYFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01BA6BD7204281590076740F /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BD5204281590076740F /* AMapLocationKit.framework */; };
+		01BA6BD8204281590076740F /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BD6204281590076740F /* AMapFoundationKit.framework */; };
+		6FAB241D386622408F68B29F /* Pods_JYFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36ECEFA8AB0506BD7AF3AB07 /* Pods_JYFNetworking.framework */; };
+		9AE3DD12156E130932E7C09A /* Pods_JYFNetworkingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BC025F175C5B8648EBAC84 /* Pods_JYFNetworkingDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,14 @@
 		0112712B20416878002E7531 /* JYFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JYFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0112712D20416878002E7531 /* JYFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYFNetworking.h; sourceTree = "<group>"; };
 		0112712E20416878002E7531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01BA6BD5204281590076740F /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		01BA6BD6204281590076740F /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		2A3D1A170506954A3DE43361 /* Pods-JYFNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYFNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYFNetworkingDemo/Pods-JYFNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2D4CED5D80EAEB67FB1E6E38 /* Pods-JYFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYFNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYFNetworking/Pods-JYFNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		36ECEFA8AB0506BD7AF3AB07 /* Pods_JYFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50BC025F175C5B8648EBAC84 /* Pods_JYFNetworkingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYFNetworkingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E0A60481693B468CC2A651 /* Pods-JYFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYFNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYFNetworking/Pods-JYFNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		EF9180C80D31A39B81659BBF /* Pods-JYFNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYFNetworkingDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JYFNetworkingDemo/Pods-JYFNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0112713220416878002E7531 /* JYFNetworking.framework in Frameworks */,
+				9AE3DD12156E130932E7C09A /* Pods_JYFNetworkingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FAB241D386622408F68B29F /* Pods_JYFNetworking.framework in Frameworks */,
+				01BA6BD8204281590076740F /* AMapFoundationKit.framework in Frameworks */,
+				01BA6BD7204281590076740F /* AMapLocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +95,8 @@
 				0112711320416803002E7531 /* JYFNetworkingDemo */,
 				0112712C20416878002E7531 /* JYFNetworking */,
 				0112711220416803002E7531 /* Products */,
+				0D1DE79485636111F656D7B7 /* Pods */,
+				401C4C3BB531FFF8FDB4F220 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,10 +125,40 @@
 		0112712C20416878002E7531 /* JYFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				01BA6BD4204281590076740F /* Tool */,
 				0112712D20416878002E7531 /* JYFNetworking.h */,
 				0112712E20416878002E7531 /* Info.plist */,
 			);
 			path = JYFNetworking;
+			sourceTree = "<group>";
+		};
+		01BA6BD4204281590076740F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				01BA6BD5204281590076740F /* AMapLocationKit.framework */,
+				01BA6BD6204281590076740F /* AMapFoundationKit.framework */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		0D1DE79485636111F656D7B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D4CED5D80EAEB67FB1E6E38 /* Pods-JYFNetworking.debug.xcconfig */,
+				E2E0A60481693B468CC2A651 /* Pods-JYFNetworking.release.xcconfig */,
+				2A3D1A170506954A3DE43361 /* Pods-JYFNetworkingDemo.debug.xcconfig */,
+				EF9180C80D31A39B81659BBF /* Pods-JYFNetworkingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		401C4C3BB531FFF8FDB4F220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36ECEFA8AB0506BD7AF3AB07 /* Pods_JYFNetworking.framework */,
+				50BC025F175C5B8648EBAC84 /* Pods_JYFNetworkingDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,10 +179,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0112712320416803002E7531 /* Build configuration list for PBXNativeTarget "JYFNetworkingDemo" */;
 			buildPhases = (
+				DC97DF0093A5D854596A2E61 /* [CP] Check Pods Manifest.lock */,
 				0112710D20416803002E7531 /* Sources */,
 				0112710E20416803002E7531 /* Frameworks */,
 				0112710F20416803002E7531 /* Resources */,
 				0112713720416878002E7531 /* Embed Frameworks */,
+				CB3825D9FFEA8FAAB3D03101 /* [CP] Embed Pods Frameworks */,
+				F6712DA3F133768ECF54671B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,10 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0112713620416878002E7531 /* Build configuration list for PBXNativeTarget "JYFNetworking" */;
 			buildPhases = (
+				400A7D010881FA5F724AA826 /* [CP] Check Pods Manifest.lock */,
 				0112712620416878002E7531 /* Sources */,
 				0112712720416878002E7531 /* Frameworks */,
 				0112712820416878002E7531 /* Headers */,
 				0112712920416878002E7531 /* Resources */,
+				28BF97E25641FFBD19016E6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,6 +275,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28BF97E25641FFBD19016E6B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYFNetworking/Pods-JYFNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		400A7D010881FA5F724AA826 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JYFNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB3825D9FFEA8FAAB3D03101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JYFNetworkingDemo/Pods-JYFNetworkingDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Gloss/Gloss.framework",
+				"${BUILT_PRODUCTS_DIR}/JYFBasic/JYFBasic.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gloss.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JYFBasic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYFNetworkingDemo/Pods-JYFNetworkingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC97DF0093A5D854596A2E61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JYFNetworkingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6712DA3F133768ECF54671B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JYFNetworkingDemo/Pods-JYFNetworkingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0112710D20416803002E7531 /* Sources */ = {
@@ -318,7 +474,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -369,7 +525,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -379,11 +535,31 @@
 		};
 		0112712420416803002E7531 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A3D1A170506954A3DE43361 /* Pods-JYFNetworkingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UDNR4WTGT;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Gloss\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JYFBasic\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
 				INFOPLIST_FILE = JYFNetworkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.JYFNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,11 +570,31 @@
 		};
 		0112712520416803002E7531 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF9180C80D31A39B81659BBF /* Pods-JYFNetworkingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2UDNR4WTGT;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Gloss\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JYFBasic\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
 				INFOPLIST_FILE = JYFNetworkingDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.JYFNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +605,7 @@
 		};
 		0112713420416878002E7531 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D4CED5D80EAEB67FB1E6E38 /* Pods-JYFNetworking.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -418,14 +615,101 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Gloss\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JYFBasic\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
 				INFOPLIST_FILE = JYFNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Gloss/Gloss.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JYFBasic/JYFBasic.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya/Moya.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm/Realm.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/AMapFoundation-NO-IDFA\"",
+					"-isystem",
+					"\"${PODS_ROOT}/AMapLocation-NO-IDFA\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AMapFoundationKit\"",
+					"-framework",
+					"\"AMapLocationKit\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"Gloss\"",
+					"-framework",
+					"\"JYFBasic\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.JYFNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -433,6 +717,7 @@
 		};
 		0112713520416878002E7531 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2E0A60481693B468CC2A651 /* Pods-JYFNetworking.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -442,14 +727,100 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Gloss\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JYFBasic\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift\"",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JYFNetworking/Tool",
+				);
 				INFOPLIST_FILE = JYFNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CryptoSwift/CryptoSwift.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Gloss/Gloss.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/JYFBasic/JYFBasic.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya/Moya.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm/Realm.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Result/Result.framework/Headers\"",
+					"-iquote",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"-isystem",
+					"\"${PODS_ROOT}/AMapFoundation-NO-IDFA\"",
+					"-isystem",
+					"\"${PODS_ROOT}/AMapLocation-NO-IDFA\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AMapFoundationKit\"",
+					"-framework",
+					"\"AMapLocationKit\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"Gloss\"",
+					"-framework",
+					"\"JYFBasic\"",
+					"-framework",
+					"\"JavaScriptCore\"",
+					"-framework",
+					"\"Moya\"",
+					"-framework",
+					"\"Realm\"",
+					"-framework",
+					"\"RealmSwift\"",
+					"-framework",
+					"\"Result\"",
+					"-framework",
+					"\"RxSwift\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.autodesk.JYFNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};

@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.6.0)
+  - CryptoSwift (0.8.3)
+  - Gloss (2.0.0)
+  - JYFBasic (0.0.1):
+    - JYFBasic/SwiftyBeaver (= 0.0.1)
+  - JYFBasic/SwiftyBeaver (0.0.1)
+  - Moya/Core (11.0.0):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.0):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Realm (3.1.0):
+    - Realm/Headers (= 3.1.0)
+  - Realm/Headers (3.1.0)
+  - RealmSwift (3.1.0):
+    - Realm (= 3.1.0)
+  - Result (3.2.4)
+  - RxSwift (4.1.2)
+
+DEPENDENCIES:
+  - CryptoSwift
+  - Gloss
+  - JYFBasic (from `https://github.com/554994782/JYFBasic.git`, branch `develop`)
+  - Moya/RxSwift
+  - RealmSwift (= 3.1.0)
+
+EXTERNAL SOURCES:
+  JYFBasic:
+    :branch: develop
+    :git: https://github.com/554994782/JYFBasic.git
+
+CHECKOUT OPTIONS:
+  JYFBasic:
+    :commit: ec2b5abb54cbdbcbefb7484746f8a7af07a6b33e
+    :git: https://github.com/554994782/JYFBasic.git
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  CryptoSwift: 033efc3523865d19cc6ab6612fa17a62613b5dfa
+  Gloss: b67617f327406adfd47adf20172d00680a3a31bd
+  JYFBasic: 76e46652571da5272f7b7b446e1bb1170d16b5b0
+  Moya: be29766339783963a70d1279d69c891ab3a1393c
+  Realm: 09513d7c054678d65cd02ce09871f805b0d758ac
+  RealmSwift: e868fee9b10e5490ad94b6b6ecd9027944da1824
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+
+PODFILE CHECKSUM: 45f79b6a5ac10495bf963448285fa042ad4af338
+
+COCOAPODS: 1.4.0
