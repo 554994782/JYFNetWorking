@@ -1,32 +1,32 @@
 //
-//  ESCaseAPI.swift
-//  ESNetworking
+//  JYFCaseAPI.swift
+//  JYFNetworking
 //
 //  Created by jiang on 2018/1/31.
-//  Copyright © 2018年 EasyHome. All rights reserved.
+//  Copyright © 2018年 EasyHome. All rights rJYFerved.
 //
 
 import Foundation
 import Moya
 import Alamofire
 
-public enum ESCaseAPI {
+public enum JYFCaseAPI {
     case GetLiWuMarketHome
     case GetCaseDetail(String, String, String, String)//案例详情
     
 }
 
-extension ESCaseAPI: TargetType {
+extension JYFCaseAPI: TargetType {
     public var baseURL: URL {
-        return URL.init(string: ESApiConfig.logRegister)!
+        return URL.init(string: JYFApiConfig.logRegister)!
     }
     
     public var path: String {
         switch self {
         case .GetLiWuMarketHome:
-            return "espot/supermarketIndex"
+            return "JYFpot/supermarketIndex"
         case .GetCaseDetail(let caseId, _, _, _):
-            return "cases/\(caseId)"
+            return "casJYF/\(caseId)"
         }
     }
     

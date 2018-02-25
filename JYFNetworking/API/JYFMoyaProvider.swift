@@ -1,9 +1,9 @@
 //
-//  ESMoyaProvider.swift
-//  ESNetworking
+//  JYFMoyaProvider.swift
+//  JYFNetworking
 //
 //  Created by jiang on 2018/2/2.
-//  Copyright © 2018年 EasyHome. All rights reserved.
+//  Copyright © 2018年 EasyHome. All rights rJYFerved.
 //
 
 import Foundation
@@ -11,9 +11,8 @@ import RxSwift
 import Moya
 import Alamofire
 
-public class ESMoyaProvider<Target>: MoyaProvider<Target> where Target: TargetType {
-    
-    //override designated initializer
+public class JYFMoyaProvider<Target>: MoyaProvider<Target> where Target: TargetType {
+    //override dJYFignated initializer
     override public init(endpointClosure: @escaping EndpointClosure = MoyaProvider.defaultEndpointMapping,
                          requestClosure: @escaping RequestClosure = MoyaProvider.defaultRequestMapping,
                          stubClosure: @escaping StubClosure = MoyaProvider.neverStub,

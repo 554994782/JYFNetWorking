@@ -1,15 +1,15 @@
 //
-//  ESUserDefaults.swift
-//  ESNetworking
+//  JYFUserDefaults.swift
+//  JYFNetworking
 //
 //  Created by jiang on 2018/2/1.
-//  Copyright © 2018年 EasyHome. All rights reserved.
+//  Copyright © 2018年 EasyHome. All rights rJYFerved.
 //
 
 import Foundation
 
-public struct ESUserDefaults {
-    private static let kSuiteName               = "ESSuiteName"
+public struct JYFUserDefaults {
+    private static let kSuiteName               = "JYFSuiteName"
     private static let kNetEnvKey               = "NetEnvKey"
     private static let kCurrentUserIdKey        = "CurrentUserIdKey"
     private static let kCurrentAppVersionKey    = "CurrentAppVersionKey"

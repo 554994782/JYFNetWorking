@@ -1,9 +1,9 @@
 //
-//  ESRealmCases.swift
-//  ESNetworking
+//  JYFRealmCasJYF.swift
+//  JYFNetworking
 //
 //  Created by jiang on 2018/2/1.
-//  Copyright © 2018年 EasyHome. All rights reserved.
+//  Copyright © 2018年 EasyHome. All rights rJYFerved.
 //
 
 import Foundation

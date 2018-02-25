@@ -1,15 +1,15 @@
 //
 //  API.swift
-//  ESNetworking
+//  JYFNetworking
 //
 //  Created by jiang on 2018/1/30.
-//  Copyright © 2018年 EasyHome. All rights reserved.
+//  Copyright © 2018年 EasyHome. All rights rJYFerved.
 //
 
 import Foundation
 import Moya
 
-private func JSONResponseDataFormatter(data: Data) -> Data {
+private func JSONRJYFponseDataFormatter(data: Data) -> Data {
     do {
         let dataAsJSON = try JSONSerialization.jsonObject(with: data, options: [])
         let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
@@ -19,7 +19,7 @@ private func JSONResponseDataFormatter(data: Data) -> Data {
     }
 }
 
-private let networkLoggerPlugin = NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)
+private let networkLoggerPlugin = NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONRJYFponseDataFormatter)
 
 private let networkActivityPlugin = NetworkActivityPlugin { change, target  -> () in
     switch change {
@@ -32,34 +32,34 @@ private let networkActivityPlugin = NetworkActivityPlugin { change, target  -> (
 
 public enum API { // swiftlint:disable:this type_name
     
-    static let apiContext = ESApiContext.sharedInstance
+    static let apiContext = JYFApiContext.sharedInstance
     
     private enum APIDebug {
-        static let ESCaseProvider = MoyaProvider<ESCaseAPI>(plugins: [networkActivityPlugin, networkLoggerPlugin])
-        static let ESLogRegisterProvider = MoyaProvider<ESLogRegisterAPI>(plugins: [networkActivityPlugin, networkLoggerPlugin])
+        static let JYFCaseProvider = MoyaProvider<JYFCaseAPI>(plugins: [networkActivityPlugin, networkLoggerPlugin])
+        static let JYFLogRegisterProvider = MoyaProvider<JYFLogRegisterAPI>(plugins: [networkActivityPlugin, networkLoggerPlugin])
 
     }
     
     private enum APIRelease {
-        static let ESCaseProvider = MoyaProvider<ESCaseAPI>(plugins: [networkActivityPlugin])
-        static let ESLogRegisterProvider = MoyaProvider<ESLogRegisterAPI>(plugins: [networkActivityPlugin])
+        static let JYFCaseProvider = MoyaProvider<JYFCaseAPI>(plugins: [networkActivityPlugin])
+        static let JYFLogRegisterProvider = MoyaProvider<JYFLogRegisterAPI>(plugins: [networkActivityPlugin])
     }
     
 
     
-    public static var ESCaseProvider: MoyaProvider<ESCaseAPI> {
+    public static var JYFCaseProvider: MoyaProvider<JYFCaseAPI> {
         if apiContext.isReleaseModel {
-            return APIRelease.ESCaseProvider
+            return APIRelease.JYFCaseProvider
         } else {
-            return APIDebug.ESCaseProvider
+            return APIDebug.JYFCaseProvider
         }
     }
     
-    public static var ESLogRegisterProvider: MoyaProvider<ESLogRegisterAPI> {
+    public static var JYFLogRegisterProvider: MoyaProvider<JYFLogRegisterAPI> {
         if apiContext.isReleaseModel {
-            return APIRelease.ESLogRegisterProvider
+            return APIRelease.JYFLogRegisterProvider
         } else {
-            return APIDebug.ESLogRegisterProvider
+            return APIDebug.JYFLogRegisterProvider
         }
     }
     

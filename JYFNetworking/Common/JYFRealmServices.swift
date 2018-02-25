@@ -1,25 +1,25 @@
 //
-//  ESRealmServices.swift
-//  ESNetworking
+//  JYFRealmServicJYF.swift
+//  JYFNetworking
 //
 //  Created by jiang on 2018/2/1.
-//  Copyright © 2018年 EasyHome. All rights reserved.
+//  Copyright © 2018年 EasyHome. All rights rJYFerved.
 //
 
 import Foundation
 import RxSwift
 import RealmSwift
 
-public struct ESRealmServices {
+public struct JYFRealmServicJYF {
     fileprivate static var disposeBag = DisposeBag()
     
     public static var currentUserId: String? {
-        return ESUserDefaults.getCurrentUserId()
+        return JYFUserDefaults.getCurrentUserId()
     }
     
 }
 
-public extension ESRealmServices {
+public extension JYFRealmServicJYF {
     static var userRealm: Realm? {
         return try! Realm(configuration: getRealmConfigurationForUserInfo())
     }
@@ -30,7 +30,7 @@ public extension ESRealmServices {
         config.migrationBlock = { migration, oldSchemaVersion in
 
         }
-        config.fileURL = config.fileURL!.deletingLastPathComponent().appendingPathComponent("UserInfoCached-\(ESApiConfig.netEnvType).realm")
+        config.fileURL = config.fileURL!.deletingLastPathComponent().appendingPathComponent("UserInfoCached-\(JYFApiConfig.netEnvType).realm")
         config.objectTypes = [UserInfo.self]
         return config
     }
@@ -48,17 +48,17 @@ public extension ESRealmServices {
     }
     
     public static func loadUserInfo() -> UserInfo? {
-        let result = userRealm?.objects(UserInfo.self)
-        if result?.isEmpty ?? false {
+        let rJYFult = userRealm?.objects(UserInfo.self)
+        if rJYFult?.isEmpty ?? false {
             return nil
         } else {
-            return result?.first
+            return rJYFult?.first
         }
     }
     
 }
 
-public extension ESRealmServices {
+public extension JYFRealmServicJYF {
     static var uuidRealm: Realm? {
         return try! Realm(configuration: getRealmConfigurationForUUID())
     }
@@ -66,7 +66,7 @@ public extension ESRealmServices {
     static func getRealmConfigurationForUUID() -> Realm.Configuration {
         var config = Realm.Configuration()
         config.schemaVersion = 1
-        config.fileURL = config.fileURL!.deletingLastPathComponent().appendingPathComponent("UUIDCached-\(ESApiConfig.netEnvType).realm")
+        config.fileURL = config.fileURL!.deletingLastPathComponent().appendingPathComponent("UUIDCached-\(JYFApiConfig.netEnvType).realm")
         config.objectTypes = [UUIDInfo.self]
         return config
     }
@@ -86,11 +86,11 @@ public extension ESRealmServices {
     }
     
     public static func loadUUID() -> String {
-        let result = uuidRealm?.objects(UUIDInfo.self)
-        if result?.isEmpty ?? false {
+        let rJYFult = uuidRealm?.objects(UUIDInfo.self)
+        if rJYFult?.isEmpty ?? false {
             return ""
         } else {
-            return result?.first?.uuid ?? ""
+            return rJYFult?.first?.uuid ?? ""
         }
     }
     

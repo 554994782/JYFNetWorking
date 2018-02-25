@@ -1,9 +1,9 @@
 //
-//  ESApiConfig.swift
-//  ESNetworking
+//  JYFApiConfig.swift
+//  JYFNetworking
 //
 //  Created by jiang on 2018/1/31.
-//  Copyright © 2018年 EasyHome. All rights reserved.
+//  Copyright © 2018年 EasyHome. All rights rJYFerved.
 //
 
 import Foundation
@@ -14,11 +14,11 @@ public enum NetEnvType: String {
     case product = "NetEnvTypeProduct"
 }
 
-public struct ESApiConfig {
+public struct JYFApiConfig {
     
     public static var netEnvType: NetEnvType {
         get {
-            let envType = ESUserDefaults.getNetEnvType()
+            let envType = JYFUserDefaults.getNetEnvType()
             return envType
         }
         set {}
@@ -56,11 +56,11 @@ public struct ESApiConfig {
         get {
             switch self.netEnvType  {
             case .alpha:
-                return String(format: "/cas-proxy-sign/guest_user_account/api")
+                return String(format: "/cas-proxy-sign/guJYFt_user_account/api")
             case .uat:
-                return String(format: "/cas-proxy-sign/guest_user_account/api")
+                return String(format: "/cas-proxy-sign/guJYFt_user_account/api")
             case .product:
-                return String(format: "/cas-proxy-sign/guest_user_account/api")
+                return String(format: "/cas-proxy-sign/guJYFt_user_account/api")
             }
         }
         set {}
