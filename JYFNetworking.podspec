@@ -1,37 +1,45 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "ESNetworking"
+  s.name         = "JYFNetworking"
   s.version      = "0.0.24"
-  s.summary      = "Have no summary ESNetworking."
+  s.summary      = "Have no summary JYFNetworking."
 
   s.description  = <<-DESC
                    A Main Foundation Component for Other Kit
                    DESC
 
-  s.homepage     = "https://gitlab-dev.shejijia.com/mobile-sjj-plt/component-ESNetworking.git"
+  s.homepage     = "https://github.com/554994782/JYFNetWorking.git"
 
   s.license      = "MIT"
 
   s.author       = { "jiangyunfeng" => "554994782@qq.com" }
   s.platform     = :ios, "8.0"
-  s.source       = { :git => "https://gitlab-dev.shejijia.com/mobile-sjj-plt/component-ESNetworking.git", :branch => "change_swift" }
+  s.source       = { :git => "https://github.com/554994782/JYFNetWorking.git", :branch => "develop" }
 
-  s.source_files  = "ESNetworking"
+  s.source_files  = "JYFNetworking"
 
 s.subspec "API" do |ss|
-ss.source_files = "ESNetworking/API/*.{h,swift,c,m}"
+ss.source_files = "JYFNetworking/API/*.{h,swift,c,m}"
 end
 
 s.subspec "Common" do |ss|
-ss.source_files = "ESNetworking/Config/*.{h,swift,c,m}"
+ss.source_files = "JYFNetworking/Config/*.{h,swift,c,m}"
 end
 
-  s.public_header_files = "ESNetworking/**/*.h"
-#s.resource_bundles = { 'ESBasic' => ['ESNetworking/**/*.{storyboard,xib,xcassets,json,imageset,png}'] }
+s.subspec "Tool" do |ss|
+ss.source_files = "JYFNetworking/Tool/*.{h,swift,c,m}"
+ss.public_header_files = "JYFNetworking/Tool/*.h"
+ss.vendored_frameworks = "JYFNetworking/Tool/AMapFoundationKit.framework","ESNetworking/Tool/AMapLocationKit.framework"
+ss.ios.frameworks = "CoreMotion", "CFNetwork", "SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics"
+ss.ios.libraries = "z", "c++"
+end
 
-s.dependency 'ESBasic'
+  s.public_header_files = "JYFNetworking/**/*.h"
+
+s.dependency 'JYFBasic'
 s.dependency 'Gloss'
 s.dependency 'Moya/RxSwift'
 s.dependency 'RealmSwift'
+s.dependency 'CryptoSwift'
 end
