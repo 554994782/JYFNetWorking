@@ -15,8 +15,19 @@
 		0112712F20416878002E7531 /* JYFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0112712D20416878002E7531 /* JYFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0112713220416878002E7531 /* JYFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0112712B20416878002E7531 /* JYFNetworking.framework */; };
 		0112713320416878002E7531 /* JYFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0112712B20416878002E7531 /* JYFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		01BA6BD7204281590076740F /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BD5204281590076740F /* AMapLocationKit.framework */; };
-		01BA6BD8204281590076740F /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BD6204281590076740F /* AMapFoundationKit.framework */; };
+		01BA6BF020428C050076740F /* AMapFoundationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BEE20428C050076740F /* AMapFoundationKit.framework */; };
+		01BA6BF120428D230076740F /* AMapLocationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BED20428C050076740F /* AMapLocationKit.framework */; };
+		01BA6BF320428D920076740F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BF220428D910076740F /* UIKit.framework */; };
+		01BA6BF520428D9E0076740F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BF420428D9E0076740F /* Foundation.framework */; };
+		01BA6BFF20428F0F0076740F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BFE20428F0F0076740F /* CoreGraphics.framework */; };
+		01BA6C0020428F380076740F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BD92042857F0076740F /* JavaScriptCore.framework */; };
+		01BA6C0120428F3E0076740F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BDB204285890076740F /* SystemConfiguration.framework */; };
+		01BA6C0220428F450076740F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BDD204285950076740F /* CoreTelephony.framework */; };
+		01BA6C0320428F4C0076740F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BDF204285A60076740F /* CoreLocation.framework */; };
+		01BA6C0420428F540076740F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BE1204285B50076740F /* libz.tbd */; };
+		01BA6C0520428F5F0076740F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BE3204285C10076740F /* libc++.tbd */; };
+		01BA6C0620428F680076740F /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BE5204285D20076740F /* libstdc++.6.0.9.tbd */; };
+		01BA6C0720428F6F0076740F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BA6BE7204286C10076740F /* Security.framework */; };
 		6FAB241D386622408F68B29F /* Pods_JYFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36ECEFA8AB0506BD7AF3AB07 /* Pods_JYFNetworking.framework */; };
 		9AE3DD12156E130932E7C09A /* Pods_JYFNetworkingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BC025F175C5B8648EBAC84 /* Pods_JYFNetworkingDemo.framework */; };
 /* End PBXBuildFile section */
@@ -56,8 +67,19 @@
 		0112712B20416878002E7531 /* JYFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JYFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0112712D20416878002E7531 /* JYFNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JYFNetworking.h; sourceTree = "<group>"; };
 		0112712E20416878002E7531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01BA6BD5204281590076740F /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
-		01BA6BD6204281590076740F /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		01BA6BD92042857F0076740F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		01BA6BDB204285890076740F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		01BA6BDD204285950076740F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		01BA6BDF204285A60076740F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		01BA6BE1204285B50076740F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		01BA6BE3204285C10076740F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		01BA6BE5204285D20076740F /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		01BA6BE7204286C10076740F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		01BA6BED20428C050076740F /* AMapLocationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapLocationKit.framework; sourceTree = "<group>"; };
+		01BA6BEE20428C050076740F /* AMapFoundationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapFoundationKit.framework; sourceTree = "<group>"; };
+		01BA6BF220428D910076740F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01BA6BF420428D9E0076740F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01BA6BFE20428F0F0076740F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2A3D1A170506954A3DE43361 /* Pods-JYFNetworkingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYFNetworkingDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYFNetworkingDemo/Pods-JYFNetworkingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2D4CED5D80EAEB67FB1E6E38 /* Pods-JYFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYFNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JYFNetworking/Pods-JYFNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		36ECEFA8AB0506BD7AF3AB07 /* Pods_JYFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,9 +102,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01BA6C0720428F6F0076740F /* Security.framework in Frameworks */,
+				01BA6C0620428F680076740F /* libstdc++.6.0.9.tbd in Frameworks */,
+				01BA6C0520428F5F0076740F /* libc++.tbd in Frameworks */,
+				01BA6C0420428F540076740F /* libz.tbd in Frameworks */,
+				01BA6C0320428F4C0076740F /* CoreLocation.framework in Frameworks */,
+				01BA6C0220428F450076740F /* CoreTelephony.framework in Frameworks */,
+				01BA6C0120428F3E0076740F /* SystemConfiguration.framework in Frameworks */,
+				01BA6C0020428F380076740F /* JavaScriptCore.framework in Frameworks */,
+				01BA6BFF20428F0F0076740F /* CoreGraphics.framework in Frameworks */,
+				01BA6BF520428D9E0076740F /* Foundation.framework in Frameworks */,
+				01BA6BF320428D920076740F /* UIKit.framework in Frameworks */,
+				01BA6BF120428D230076740F /* AMapLocationKit.framework in Frameworks */,
+				01BA6BF020428C050076740F /* AMapFoundationKit.framework in Frameworks */,
 				6FAB241D386622408F68B29F /* Pods_JYFNetworking.framework in Frameworks */,
-				01BA6BD8204281590076740F /* AMapFoundationKit.framework in Frameworks */,
-				01BA6BD7204281590076740F /* AMapLocationKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +168,8 @@
 		01BA6BD4204281590076740F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				01BA6BD5204281590076740F /* AMapLocationKit.framework */,
-				01BA6BD6204281590076740F /* AMapFoundationKit.framework */,
+				01BA6BEE20428C050076740F /* AMapFoundationKit.framework */,
+				01BA6BED20428C050076740F /* AMapLocationKit.framework */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -155,6 +188,17 @@
 		401C4C3BB531FFF8FDB4F220 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				01BA6BFE20428F0F0076740F /* CoreGraphics.framework */,
+				01BA6BF420428D9E0076740F /* Foundation.framework */,
+				01BA6BF220428D910076740F /* UIKit.framework */,
+				01BA6BE7204286C10076740F /* Security.framework */,
+				01BA6BE5204285D20076740F /* libstdc++.6.0.9.tbd */,
+				01BA6BE3204285C10076740F /* libc++.tbd */,
+				01BA6BE1204285B50076740F /* libz.tbd */,
+				01BA6BDF204285A60076740F /* CoreLocation.framework */,
+				01BA6BDD204285950076740F /* CoreTelephony.framework */,
+				01BA6BDB204285890076740F /* SystemConfiguration.framework */,
+				01BA6BD92042857F0076740F /* JavaScriptCore.framework */,
 				36ECEFA8AB0506BD7AF3AB07 /* Pods_JYFNetworking.framework */,
 				50BC025F175C5B8648EBAC84 /* Pods_JYFNetworkingDemo.framework */,
 			);
@@ -667,14 +711,10 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-all_load",
 					"-ObjC",
+					"-all_load",
 					"-l\"c++\"",
 					"-l\"z\"",
-					"-framework",
-					"\"AMapFoundationKit\"",
-					"-framework",
-					"\"AMapLocationKit\"",
 					"-framework",
 					"\"Alamofire\"",
 					"-framework",
@@ -778,14 +818,10 @@
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
-					"-all_load",
 					"-ObjC",
+					"-all_load",
 					"-l\"c++\"",
 					"-l\"z\"",
-					"-framework",
-					"\"AMapFoundationKit\"",
-					"-framework",
-					"\"AMapLocationKit\"",
 					"-framework",
 					"\"Alamofire\"",
 					"-framework",

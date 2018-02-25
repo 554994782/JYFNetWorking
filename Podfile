@@ -6,7 +6,7 @@ post_install do |installer|
     end
     end
 
-platform :ios, '8.0'$(PROJECT_DIR)/JYFNetworking/Tool
+platform :ios, '8.0'
 inhibit_all_warnings!
 
 source 'https://github.com/Cocoapods/Specs.git'
